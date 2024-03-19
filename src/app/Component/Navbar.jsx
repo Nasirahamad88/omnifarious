@@ -6,16 +6,20 @@ import Logo from '../../../public/Logo.png'
 const Navbar = () => {
     
   return (
-    <div className="flex bg-blue-300 h-16 fixed top-0 left-0 w-full z-10 ">
+    <div className="flex bg-gray-500 h-16 fixed top-0 left-0 w-full z-10 ">
       <nav className="flex w-[80%] mx-auto items-center justify-between ">
-        <div>
-          <Image src={Logo} alt="logo" height={180} width={180} />
+        {/* <div className="sm:w-96">
+          <Image src={Logo} alt="logo" height={180} width={350} />
+        </div> */}
+        <div className="w-full sm:w-96 md:w-1/ lg:w-1/2 xl:w-1/3 2xl:w-1/4">
+          <Image src={Logo} alt="logo" height={180} width={250} />
         </div>
-        <div className="flex space-x-3">
+
+        <div className="flex ">
           <div className="dropdown dropdown-hover">
             <div
               tabIndex={0}
-              className=" text-black md:font-bold hover:bg-blue-400 rounded-lg m-1"
+              className=" text-black  hover:bg-blue-400 rounded-lg m-1"
             >
               Welcome to Omnifarious
             </div>
@@ -123,12 +127,11 @@ const Navbar = () => {
           </div>
           <div
             tabIndex={0}
-            className=" text-black font-bold bg-blue-500 rounded-lg px-2 py-1  m-1"
+            className="font-bold border rounded-lg px-2 py-1  m-1 text-green-700"
           >
             Contact Us
           </div>
         </div>
-        
       </nav>
     </div>
   );

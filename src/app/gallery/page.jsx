@@ -1,81 +1,107 @@
-import Image from "next/image";
-import Image1 from "../../../public/gallery/1.jpg";
-import Image2 from "../../../public/gallery/1 (3).jpg";
-import Image3 from "../../../public/gallery/1 (4).jpg";
-import Image4 from "../../../public/gallery/1 (5).jpg";
-import Image5 from "../../../public/gallery/1 (6).jpg";
-import Image6 from "../../../public/gallery/1 (9).jpg";
+"use client"
+import React, { useRef, useState } from "react";
+import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
 
+const GallerySection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef(null);
 
+  const images = [
+    "/gallery/1.jpg",
+    "/gallery/1 (3).jpg",
+    "/gallery/1 (4).jpg",
+    "/gallery/1 (5).jpg",
+    "/gallery/1 (6).jpg",
+    "/gallery/1 (9).jpg",
+  ];
 
-import React from 'react'
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
-const Gallery = () => {
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handleSlideTo = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
-    <div className="bg-white ">
-      <div>
-        <div className="container mx-auto px-4 py-8">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Gallery</h2>
-
-          <p className="text-xl text-gray-500 text-center mb-4">
-            WE HAVE THE BEST CAR IMAGES
-          </p>
+    <section className="bg-white py-20">
+      <h1 className=" text-4xl text-center py-10 font-bold">Gallery</h1>
+      <div
+        id="default-carousel"
+        className="relative w-[60%] mx-auto h-auto"
+        data-carousel="slide"
+      >
+        {/* Carousel wrapper */}
+        <div
+          className="relative h-auto overflow-hidden rounded-lg md:h-96"
+          ref={carouselRef}
+        >
+          {/* Carousel items */}
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`${
+                index === currentIndex ? "" : "hidden"
+              } duration-700 ease-in-out`}
+              data-carousel-item
+            >
+              <img
+                src={image}
+                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt={`Slide ${index + 1}`}
+              />
+            </div>
+          ))}
         </div>
-      </div>
-      <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-        <div className="-m-1 flex flex-wrap md:-m-2">
-          <div className="flex w-1/2 flex-wrap">
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image1}
-              />
-            </div>
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image2}
-              />
-            </div>
-            <div className="w-full p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image3}
-              />
-            </div>
-          </div>
-          <div className="flex w-1/2 flex-wrap">
-            <div className="w-full p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image4}
-              />
-            </div>
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image5}
-              />
-            </div>
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="gallery"
-                className="block h-full w-full rounded-lg object-cover object-center"
-                src={Image6}
-              />
-            </div>
-          </div>
+        {/* Slider indicators */}
+        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              className={`w-3 h-3 rounded-full ${
+                index === currentIndex ? "bg-blue-900" : ""
+              }`}
+              aria-current={index === currentIndex ? "true" : "false"}
+              aria-label={`Slide ${index + 1}`}
+              onClick={() => handleSlideTo(index)}
+              data-carousel-slide-to={index}
+            ></button>
+          ))}
         </div>
+        {/* Slider controls */}
+        <button
+          type="button"
+          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+          onClick={handlePrev}
+        >
+          <h1 className=" text-3xl">
+            <FiArrowLeftCircle />
+          </h1>
+          {/* Previous button content */}
+        </button>
+        <button
+          type="button"
+          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+          onClick={handleNext}
+        >
+          <h1 className=" text-3xl">
+            <FiArrowRightCircle />
+          </h1>
+        </button>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
-export default Gallery
-
-
+export default GallerySection;

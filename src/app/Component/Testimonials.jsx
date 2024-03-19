@@ -1,117 +1,199 @@
-import Image from "next/image";
+"use client"
 import React from "react";
-import Image1 from "../../../public/banner/whyus.png";
-import Image2 from "../../../public/banner/about1.jpg";
-import Image3 from "../../../public/banner/about1.jpg";
-import Image4 from "../../../public/banner/about1.jpg";
+import Marquee from "react-fast-marquee";
 
 const Testimonials = () => {
-  return (
-    <section className="bg-white py-20 ">
-      <div className="flex flex-col justify-center items-center text-center py-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Testimonials</h1>
-        <p className="text-xl text-gray-500">People Love Us</p>
-      </div>
 
-      <div className="carousel w-full">
-        <div
-          id="item1"
-          className="carousel-item w-full flex justify-center items-center"
-        >
-          <div className="text-center">
-            <Image
-              src={Image1}
-              alt="Testimonial 1"
-              width={200}
-              height={200}
-              className="mx-auto mb-4 rounded-full"
-            />
-            <p className="text-gray-700">
-              "Very happy with the service. They were professional, efficient,
-              and delivered high-quality work."
+  const settings = {
+    direction: "left",
+    speed: 50,
+    pauseOnHover: true,
+    gradient: false,
+    gradientColor: "#ffffff00",
+    gradientWidth: 10,
+    // style: { height: "200px" },
+  };
+
+  
+
+  return (
+    <div className="bg-white py-10">
+      <h1 className=" text-4xl font-bold text-center py-10">Testimonials</h1>
+      {/* <button onClick={handleAutoplayToggle}>
+        {autoplay ? "Stop Autoplay" : "Start Autoplay"}
+      </button> */}
+      <Marquee {...settings} className="flex space-x-6">
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SPARKLE KNIT COMPOSITE LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Kabirpur, Savar, Dhaka
             </p>
-            <h4 className="text-lg font-bold">John Doe</h4>
-            <span className="text-gray-500 block">CEO, Company Name</span>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Electrical Safety Consultant</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          id="item2"
-          className="carousel-item w-full flex justify-center items-center"
-        >
-          <div className="text-center">
-            <Image
-              src={Image2}
-              alt="Testimonial 2"
-              width={200}
-              height={200}
-              className="mx-auto mb-4 rounded-full"
-            />
-            <p className="text-gray-700">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              FAHION POINT LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Konabari, BSCIC, Gazipur
             </p>
-            <h4 className="text-lg font-bold">Jane Smith</h4>
-            <span className="text-gray-500 block">CTO, Another Company</span>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Detail Engineering Assessment</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          id="item3"
-          className="carousel-item w-full flex justify-center items-center"
-        >
-          <div className="text-center">
-            <Image
-              src={Image3}
-              alt="Testimonial 3"
-              width={200}
-              height={200}
-              className="mx-auto mb-4 rounded-full"
-            />
-            <p className="text-gray-700">
-              "Another testimonial content goes here."
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SOUTHERN KNITWEAR LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">Location: Gazipur</p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Single Line Diagram (SLD)</li>
+                <li>Lightning Protection System (LPS)</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              MEGHNA SUGAR REFINARY LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Meghna Ghat
             </p>
-            <h4 className="text-lg font-bold">Another Person</h4>
-            <span className="text-gray-500 block">Position, Company</span>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Fire Alarm & Detection System</li>
+                <li>Fire Standpipe System</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          id="item4"
-          className="carousel-item w-full flex justify-center items-center"
-        >
-          <div className="text-center">
-            <Image
-              src={Image4}
-              alt="Testimonial 4"
-              width={200}
-              height={200}
-              className="mx-auto mb-4 rounded-full"
-            />
-            <p className="text-gray-700">"Yet another testimonial content."</p>
-            <h4 className="text-lg font-bold">Testimonial Person</h4>
-            <span className="text-gray-500 block">Role, Company</span>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              MEGHNA BULK BAG INDUSTRIES LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Sonargaon, Narayangonj
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Fire Alarm & Detection System</li>
+                <li>Fire Safety Design</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" className="btn btn-xs">
-          *
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          *
-        </a>
-        <a href="#item3" className="btn btn-xs">
-          *
-        </a>
-        <a href="#item4" className="btn btn-xs">
-          *
-        </a>
-        <a href="#item1" className="btn btn-xs">
-          *
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          *
-        </a>
-      </div>
-    </section>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              ASR SWEATER LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Mawona, Gazipur.
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Fire Alarm & Detection System</li>
+                <li>Single Line Diagram (SLD)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SPARKLE KNIT COMPOSITE LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Kabirpur, Savar, Dhaka
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Electrical Safety Consultant</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SPARKLE KNIT COMPOSITE LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Kabirpur, Savar, Dhaka
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Electrical Safety Consultant</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SPARKLE KNIT COMPOSITE LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Kabirpur, Savar, Dhaka
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Electrical Safety Consultant</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-8 border shadow-xl rounded-xl">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              SPARKLE KNIT COMPOSITE LTD.
+            </h2>
+            <p className="text-gray-500 text-center mb-4">
+              Location: Kabirpur, Savar, Dhaka
+            </p>
+            <div className="text-gray-700">
+              <p className="font-bold">Project Entity:</p>
+              <ul className="list-disc pl-4 ml-4">
+                <li>Electrical Safety Consultant</li>
+                <li>Fire Safety Consultant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Marquee>
+    </div>
   );
 };
 

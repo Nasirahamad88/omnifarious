@@ -1,3 +1,4 @@
+import AllLogo from "./Component/AllLogo";
 import Carousel from "./Component/Carousel";
 import Testimonials from "./Component/Testimonials";
 import GallerySection from "./gallery/page";
@@ -14,7 +15,8 @@ export default function Home() {
       <WhyUs />
       <OurTeam />
       <GallerySection/>
-      <Testimonials/>
+      <Testimonials />
+      <AllLogo/>
    </section>
   );
 }
