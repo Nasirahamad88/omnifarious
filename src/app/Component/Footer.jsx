@@ -1,4 +1,5 @@
 import React from 'react'
+import GoogleMapsLink from './GoogleMapsLink';
 
 const Footer = () => {
   return (
@@ -19,10 +20,7 @@ const Footer = () => {
           <a className="link link-hover">Press kit</a>
         </nav>
         <nav>
-          <h6 className="footer-title">Legal</h6>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <GoogleMapsLink/>
         </nav>
         <form>
           <h6 className="footer-title">Newsletter</h6>

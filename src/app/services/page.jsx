@@ -11,6 +11,7 @@ import {
   MdDesignServices,
 } from "react-icons/md";
 
+import { FaGoogleWallet } from "react-icons/fa";
 
 
 const Services = () => {
@@ -35,7 +36,7 @@ const Services = () => {
             {/* Heading start */}
             <header className="text-center mx-auto mb-12 lg:px-20">
               <h2 className="lg:text-4xl leading-normal mb-2 font-bold text-black">
-                Our Services
+                Services
               </h2>
               <svg
                 version="1.1"
@@ -137,6 +138,34 @@ const Services = () => {
                   <p className="text-gray-500">
                     All type of Environmental Testing, Inspection, Assessment,
                     Audit and training for sustainability.
+                  </p>
+                </div>
+              </div>
+              <div
+                className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".1s"
+                style={{
+                  visibility: "visible",
+                  animationDuration: "1s",
+                  animationDelay: "0.1s",
+                  animationName: "fadeInUp",
+                }}
+              >
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                  {/* icons */}
+                  <div className="flex items-center justify-center">
+                    <div className="text-black text-4xl">
+                      <FaGoogleWallet />
+                    </div>
+                  </div>
+                  <div className="inline-block text-gray-900 mb-4"></div>
+                  <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                    Leather Working Group (LWG) Certification
+                  </h3>
+                  <p className="text-gray-500">
+                    Providing consultancy services and guidance to prepare
+                    factory for certification as per the LWG audit protocol.
                   </p>
                 </div>
               </div>
@@ -259,34 +288,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div
-                className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
-                data-wow-duration="1s"
-                data-wow-delay=".1s"
-                style={{
-                  visibility: "visible",
-                  animationDuration: "1s",
-                  animationDelay: "0.1s",
-                  animationName: "fadeInUp",
-                }}
-              >
-                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-                  {/* icons */}
-                  <div className="flex items-center justify-center">
-                    <div className="text-black text-4xl">
-                      <MdOutlineDepartureBoard />
-                    </div>
-                  </div>
-                  <div className="inline-block text-gray-900 mb-4"></div>
-                  <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Electrical Equipment Supply
-                  </h3>
-                  <p className="text-gray-500">
-                    Supply of different type of electrical equipment ie Light,
-                    Fan, Distribution Board etc.
-                  </p>
-                </div>
-              </div>
+              
               <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
