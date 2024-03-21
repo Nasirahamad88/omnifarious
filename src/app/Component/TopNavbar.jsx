@@ -31,15 +31,15 @@ const TopNavbar = () => {
                 <SlSocialTwitter />
               </div>
             </Link>
-                </div>
-                
+          </div>
+
           <div className=" font-bold flex">
             <a className="flex items-center sm:space-x-2">
               <LuPhone />
               <p className="text-green-800">+880 1621 910 870</p>
             </a>
             <p className="text-green-800 ps-3">
-              Road 12, Sector 13, Uttara, Dhaka, Bangladesh
+              House 39, Road 13, Sector 13, Uttara Model Town, Dhaka-1230
             </p>
           </div>
         </nav>

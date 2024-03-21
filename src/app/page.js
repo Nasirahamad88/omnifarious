@@ -1,6 +1,7 @@
 import AllLogo from "./Component/AllLogo";
 import Carousel from "./Component/Carousel";
 import Testimonials from "./Component/Testimonials";
+import Contact from "./contact/page";
 import GallerySection from "./gallery/page";
 import OurTeam from "./ourTeam/page";
 // import KeenSlider from "./Component/KeenSlider";
@@ -16,7 +17,8 @@ export default function Home() {
       <OurTeam />
       <GallerySection/>
       <Testimonials />
-      <AllLogo/>
+      <AllLogo />
+      <Contact/>
    </section>
   );
 }

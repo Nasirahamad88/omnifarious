@@ -4,6 +4,7 @@ import React from 'react'
 
 import Logo from '../../../public/Logo.png'
 import TopNavbar from './TopNavbar';
+import Link from 'next/link';
 const Navbar = () => {
     
   return (
@@ -11,20 +12,20 @@ const Navbar = () => {
       <TopNavbar />
       <div className="flex  h-16    bg-indigo-300 ">
         <nav className="flex w-[98%] items-center mx-auto justify-between">
-          {/* <div className="sm:w-96">
-          <Image src={Logo} alt="logo" height={180} width={350} />
-        </div> */}
+          
           <div className="">
-            <Image src={Logo} alt="logo" height={180} width={250} />
+            <Link href='/'>
+              <Image src={Logo} alt="logo" height={180} width={250} />
+            </Link>
           </div>
 
           <div className="flex text-center space-x-3 justify-items-end ">
             <div className="dropdown dropdown-hover">
               <h1
                 tabIndex={0}
-                className=" rounded-lg my-1 text-indigo-950 font-semibold"
+                className=" rounded-lg my-1 px-1 text-indigo-950 font-semibold"
               >
-                Welcome-to-Omnifarious
+                Welcome to Omnifarious
               </h1>
               <ul
                 tabIndex={0}
@@ -42,8 +43,11 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="dropdown dropdown-hover ">
-              <div tabIndex={0} className=" text-indigo-950 font-semibold my-1">
-                Services
+              <div
+                tabIndex={0}
+                className=" text-indigo-950 font-semibold px-1 my-1"
+              >
+                <Link href="/services">Services</Link>
               </div>
               <ul
                 tabIndex={0}
@@ -81,7 +85,7 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover ">
               <div
                 tabIndex={0}
-                className=" text-indigo-950 font-semibold my-1 "
+                className=" text-indigo-950 font-semibold my-1 px-1 "
               >
                 Training & Workshop
               </div>
@@ -100,16 +104,22 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <div tabIndex={0} className=" text-indigo-950 font-semibold  my-1">
-              Gallery
+            <div
+              tabIndex={0}
+              className=" text-indigo-950 font-semibold px-1 my-1"
+            >
+              <Link href="/gallery">Gallery</Link>
             </div>
-            <div tabIndex={0} className=" text-indigo-950 font-semibold  my-1">
+            <div
+              tabIndex={0}
+              className=" text-indigo-950 font-semibold px-1 my-1"
+            >
               Latest News
             </div>
             <div className="dropdown dropdown-hover">
               <div
                 tabIndex={0}
-                className=" text-indigo-950 font-semibold  my-1"
+                className=" text-indigo-950 font-semibold px-1  my-1"
               >
                 Request Quotation
               </div>
@@ -138,7 +148,7 @@ const Navbar = () => {
               tabIndex={0}
               className="font-bold border rounded-lg px-2 py-1   text-indigo-950 bg-green-800 "
             >
-              Contact Us
+              <Link href="/contact">Contact Us</Link>
             </div>
           </div>
         </nav>

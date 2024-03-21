@@ -259,7 +259,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -272,7 +272,7 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  <div className="flex items-center justify-center">
+                  {/* <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdOutlineSolarPower />
                     </div>
@@ -287,9 +287,9 @@ const Services = () => {
                     installation, T&C and training for sustainability.
                   </p>
                 </div>
-              </div>
+              </div> */} 
               
-              <div
+              {/* <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -302,7 +302,7 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  <div className="flex items-center justify-center">
+                  {/* <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdMiscellaneousServices />
                     </div>
@@ -318,8 +318,8 @@ const Services = () => {
                     Industrial Pest Control and Cleaning Services
                   </p>
                 </div>
-              </div>
-              <div
+              </div> */} 
+              {/* <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -332,7 +332,7 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  <div className="flex items-center justify-center">
+                  {/* <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdDesignServices />
                     </div>
@@ -350,7 +350,7 @@ const Services = () => {
                     services for all the mentioned areas.
                   </p>
                 </div>
-              </div>
+              </div> */} 
 
               {/* End service block 2 */}
               {/* Add more service blocks similarly */}

@@ -20,7 +20,7 @@ const Footer = () => {
           <a className="link link-hover">Press kit</a>
         </nav>
         <nav>
-          <GoogleMapsLink/>
+          {/* <GoogleMapsLink/> */}
         </nav>
         <form>
           <h6 className="footer-title">Newsletter</h6>
