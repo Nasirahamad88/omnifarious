@@ -4,7 +4,7 @@ import GoogleMapsLink from '../Component/GoogleMapsLink'
 const Contact = () => {
   return (
     <section className="bg-white pt-40 pb-20">
-      <div className='w-[90%] mx-auto'>
+      <div className="w-[90%] mx-auto">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -57,7 +57,10 @@ const Contact = () => {
                 </svg>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                  <p className="text-gray-600">+880 1673901414</p>
+                  <p className="text-gray-600">
+                    +880 1673901414 <br />
+                    +8801632330977
+                  </p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">

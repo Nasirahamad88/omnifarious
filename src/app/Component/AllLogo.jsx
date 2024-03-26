@@ -21,7 +21,7 @@ const AllLogo = () => {
   return (
     <div className="space-x-6 bg-white py-20">
       <h2 className="pb-10 text-4xl font-bold text-black hover:underline text-center">
-        Significant Works
+        Our Clients
       </h2>
       <Marquee {...settings} className="flex ">
         <Image src={Logo1} className="w-32 rounded-full px-2" />

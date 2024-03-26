@@ -12,9 +12,8 @@ const Navbar = () => {
       <TopNavbar />
       <div className="flex  h-16    bg-indigo-300 ">
         <nav className="flex w-[98%] items-center mx-auto justify-between">
-          
           <div className="">
-            <Link href='/'>
+            <Link href="/">
               <Image src={Logo} alt="logo" height={180} width={250} />
             </Link>
           </div>
@@ -80,6 +79,9 @@ const Navbar = () => {
                 <li>
                   <a> Electrical Engineering & Consultancy Services </a>
                 </li>
+                <li>
+                  <a> Organizational Development (OD) </a>
+                </li>
               </ul>
             </div>
             <div className="dropdown dropdown-hover ">
@@ -87,7 +89,7 @@ const Navbar = () => {
                 tabIndex={0}
                 className=" text-indigo-950 font-semibold my-1 px-1 "
               >
-                Training & Workshop
+                Training & Facilitation (T&F)
               </div>
               <ul
                 tabIndex={0}

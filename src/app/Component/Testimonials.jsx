@@ -18,7 +18,9 @@ const Testimonials = () => {
 
   return (
     <div className="bg-white py-10">
-      <h1 className=" text-4xl font-bold text-center py-10">Testimonials</h1>
+      <h1 className=" text-4xl font-bold text-center py-10">
+        Words From Our Partners And Clients
+      </h1>
       {/* <button onClick={handleAutoplayToggle}>
         {autoplay ? "Stop Autoplay" : "Start Autoplay"}
       </button> */}
