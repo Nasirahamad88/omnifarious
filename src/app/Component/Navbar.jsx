@@ -18,7 +18,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="flex text-center space-x-3 justify-items-end ">
+          <div className="flex text-center space-x-1 justify-items-end ">
             <div className="dropdown dropdown-hover">
               <h1
                 tabIndex={0}

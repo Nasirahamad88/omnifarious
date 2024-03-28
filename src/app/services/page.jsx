@@ -77,7 +77,7 @@ const Services = () => {
                 />
               </svg>
               <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
-                Save time managing advertising &amp; Content for your business.
+                Managing advertising &amp; Content for your business.
               </p>
             </header>
             {/* End heading */}
@@ -184,18 +184,18 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <FaHouseFire />
+                      <FaHouseChimneyCrack />
                     </div>
                   </div>
 
                   <div className="inline-block text-gray-900 mb-4"></div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Fire Safety
+                    Structural Safety
                   </h3>
                   <p className="text-gray-500">
-                    Fire Detection and Protection System design & drawing,
-                    material supply, installation, T&C and training for
-                    sustainability.
+                    DEA - Detail Engineering Assessment * RCC & Steel building
+                    design, drawing & construction * Retrofitting design,
+                    drawing & construction.
                   </p>
                 </div>
               </div>
@@ -229,6 +229,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
+
               <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
@@ -244,22 +245,22 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <FaHouseChimneyCrack />
+                      <FaHouseFire />
                     </div>
                   </div>
 
                   <div className="inline-block text-gray-900 mb-4"></div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Structural Safety
+                    Fire Safety
                   </h3>
                   <p className="text-gray-500">
-                    DEA - Detail Engineering Assessment * RCC & Steel building
-                    design, drawing & construction * Retrofitting design,
-                    drawing & construction.
+                    Fire Detection and Protection System design & drawing,
+                    material supply, installation, T&C and training for
+                    sustainability.
                   </p>
                 </div>
               </div>
-              {/* <div
+              <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -272,7 +273,7 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  {/* <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdOutlineSolarPower />
                     </div>
@@ -280,16 +281,16 @@ const Services = () => {
 
                   <div className="inline-block text-gray-900 mb-4"></div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Renewable Energy & Solar System
+                    Head Hunting/Recruitment Services
                   </h3>
                   <p className="text-gray-500">
-                    Site survey, analysis, design & drawing, material supply,
-                    installation, T&C and training for sustainability.
+                    All department employees recruitment services including head
+                    hunting, interview & selection.
                   </p>
                 </div>
-              </div> */} 
-              
-              {/* <div
+              </div>
+
+              <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -301,8 +302,8 @@ const Services = () => {
                 }}
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
-                  {/* icons */}
-                  {/* <div className="flex items-center justify-center">
+                  {/* {/* icons */}
+                  <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdMiscellaneousServices />
                     </div>
@@ -310,16 +311,14 @@ const Services = () => {
 
                   <div className="inline-block text-gray-900 mb-4"></div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    Pest Control Services
+                    Calibration Services
                   </h3>
                   <p className="text-gray-500">
-                    Cockroach, Termites, Bedbugs, Rodent, Mosquito, Ants, Snakes
-                    etc control, Fumigation Services, Residential, Commercial &
-                    Industrial Pest Control and Cleaning Services
+                    Machine, Equipment, Lift Calibration Services.
                   </p>
                 </div>
-              </div> */} 
-              {/* <div
+              </div>
+              <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
                 data-wow-delay=".1s"
@@ -332,7 +331,7 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  {/* <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
                       <MdDesignServices />
                     </div>
@@ -340,17 +339,43 @@ const Services = () => {
 
                   <div className="inline-block text-gray-900 mb-4"></div>
                   <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
-                    ETP{" "}
-                    <span className=" text-xs">(Effluent Treatment Plant)</span>{" "}
-                    Solution
+                    Digital Signage & Evacuation Plan
                   </h3>
                   <p className="text-gray-500">
-                    ETP planning, set-up, construction, modification, T&C,
-                    servicing and training for sustainability. Consultancy
-                    services for all the mentioned areas.
+                    Design, Supply and Installation of all kinds of Signage,
+                    Poster, Banner, Plans etc.
                   </p>
                 </div>
-              </div> */} 
+              </div>
+              <div
+                className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay=".1s"
+                style={{
+                  visibility: "visible",
+                  animationDuration: "1s",
+                  animationDelay: "0.1s",
+                  animationName: "fadeInUp",
+                }}
+              >
+                <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                  {/* icons */}
+                  <div className="flex items-center justify-center">
+                    <div className="text-black text-4xl">
+                      <MdDesignServices />
+                    </div>
+                  </div>
+
+                  <div className="inline-block text-gray-900 mb-4"></div>
+                  <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                    Training Organizer & Facilitator
+                  </h3>
+                  <p className="text-gray-500">
+                    HR & Compliance related soft skill training programs
+                    organizer and facilitator.
+                  </p>
+                </div>
+              </div>
 
               {/* End service block 2 */}
               {/* Add more service blocks similarly */}
