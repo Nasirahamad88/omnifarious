@@ -1,10 +1,17 @@
 "use client"
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
 
 const GallerySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
+const [slideInterval, setSlideInterval] = useState(null);
+  
+  useEffect(() => {
+    if (slideInterval) clearInterval(slideInterval);
+    setSlideInterval(setInterval(handleNext, 3000));
+    return () => clearInterval(slideInterval);
+  }, [slideInterval]);
 
   const images = [
     "/gallery/1.jpg",

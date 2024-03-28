@@ -1,23 +1,23 @@
 import React from "react";
-import { GrCompliance } from "react-icons/gr";
 
-import { FaHouseFire, FaHouseChimneyCrack } from "react-icons/fa6";
-import {
-  MdOutlineSolarPower,
-  MdOutlineDepartureBoard,
-  MdMiscellaneousServices,
-  MdOutlineAssessment,
-  MdOutlineElectricalServices,
-  MdDesignServices,
-} from "react-icons/md";
 
-import { FaGoogleWallet } from "react-icons/fa";
 
+import Image from "next/image";
+import Social from '../../../public/Icons/Social.png'
+import Environmental from "../../../public/Icons/Environmental.png";
+import Electrical from "../../../public/Icons/Electrical.jpg";
+import Fire from '../../../public/Icons/Fire.jpg'
+import Head from '../../../public/Icons/Head.png'
+import Leather from "../../../public/Icons/Leather.jpg";
+import Signage from "../../../public/Icons/Signage.png";
+import Structural from "../../../public/Icons/Structural.JPG";
+import Calibration from "../../../public/Icons/Calibration.png";
+import Training from "../../../public/Icons/Training.png";
 
 const Services = () => {
     return (
       <section className="bg-white">
-        <div className="text-white -mt-28 py-8 px-6 mb-10 text-center bg-gradient-to-r from-blue-700 to-blue-800 rounded-lg shadow-xl max-w-md relative mx-28 ">
+        {/* <div className="text-white -mt-28 py-8 px-6 mb-10 text-center bg-gradient-to-r from-blue-700 to-blue-800 rounded-lg shadow-xl max-w-md relative mx-28 ">
           <h1 className="text-2xl font-bold mb-2">Today's Offer!</h1>
           <h3 className="text-lg font-semibold mb-2">Sunday Deal: 20% Off</h3>
           <p className="text-sm mb-4">
@@ -26,7 +26,7 @@ const Services = () => {
           <button className="bg-white text-blue-800 font-semibold py-2 px-6 rounded-full shadow-md hover:bg-blue-100 transition duration-300">
             Book Now
           </button>
-        </div>
+        </div> */}
 
         <div
           id="services"
@@ -77,7 +77,8 @@ const Services = () => {
                 />
               </svg>
               <p className="text-gray-500 leading-relaxed font-light text-xl mx-auto pb-2">
-                Managing advertising &amp; Content for your business.
+                One Stop Solution in Compliance &amp; Engineering Services to
+                Ensure Sustainability.
               </p>
             </header>
             {/* End heading */}
@@ -95,14 +96,18 @@ const Services = () => {
               >
                 <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
                   {/* icons */}
-                  <div className="flex items-center justify-center">
-                    <div className="text-black text-4xl">
-                      <GrCompliance />
+                  <div className="flex items-center justify-center ">
+                    <div className="text-black text-4xl ">
+                      <Image
+                        src={Social}
+                        alt="Social Compliance"
+                        className="w-10"
+                      />
                     </div>
                   </div>
 
                   <div className="inline-block text-gray-900 mb-4"></div>
-                  <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
+                  <h3 className="text-lg leading-normal mb-2  font-semibold text-black">
                     Social Compliance
                   </h3>
                   <p className="text-gray-500">
@@ -128,7 +133,11 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdOutlineAssessment />
+                      <Image
+                        src={Environmental}
+                        alt="Environmental Compliance"
+                        className="w-10"
+                      />
                     </div>
                   </div>
                   <div className="inline-block text-gray-900 mb-4"></div>
@@ -156,7 +165,11 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <FaGoogleWallet />
+                      <Image
+                        src={Leather}
+                        alt="Leather Working Group (LWG) Certification"
+                        className="w-10"
+                      />
                     </div>
                   </div>
                   <div className="inline-block text-gray-900 mb-4"></div>
@@ -184,7 +197,11 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <FaHouseChimneyCrack />
+                      <Image
+                        src={Structural}
+                        alt="Structural Safety"
+                        className="w-10"
+                      />
                     </div>
                   </div>
 
@@ -214,7 +231,11 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdOutlineElectricalServices />
+                      <Image
+                        src={Electrical}
+                        alt="Electrical Safety"
+                        className="w-10"
+                      />
                     </div>
                   </div>
 
@@ -245,7 +266,7 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <FaHouseFire />
+                      <Image src={Fire} alt="Fire Safety" className="w-10" />
                     </div>
                   </div>
 
@@ -275,7 +296,11 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdOutlineSolarPower />
+                      <Image
+                        src={Head}
+                        alt="Head Hunting/Recruitment Services"
+                        className="w-10"
+                      />
                     </div>
                   </div>
 
@@ -305,7 +330,11 @@ const Services = () => {
                   {/* {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdMiscellaneousServices />
+                      <Image
+                        src={Calibration}
+                        alt="Calibration Services"
+                        className="w-10"
+                      />
                     </div>
                   </div>
 
@@ -333,7 +362,7 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdDesignServices />
+                      <Image src={Signage} alt="Signage" className="w-10" />
                     </div>
                   </div>
 
@@ -362,7 +391,7 @@ const Services = () => {
                   {/* icons */}
                   <div className="flex items-center justify-center">
                     <div className="text-black text-4xl">
-                      <MdDesignServices />
+                      <Image src={Training} alt="Signage" className="w-10" />
                     </div>
                   </div>
 
