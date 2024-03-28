@@ -8,7 +8,7 @@ import Environmental from "../../../public/Icons/Environmental.png";
 import Electrical from "../../../public/Icons/Electrical.jpg";
 import Fire from '../../../public/Icons/Fire.jpg'
 import Head from '../../../public/Icons/Head.png'
-import Leather from "../../../public/Icons/Leather.jpg";
+import Leather from "../../../public/Icons/Leather.JPG";
 import Signage from "../../../public/Icons/Signage.png";
 import Structural from "../../../public/Icons/Structural.JPG";
 import Calibration from "../../../public/Icons/Calibration.png";
