@@ -17,16 +17,7 @@ import Training from "../../../public/Icons/Training.png";
 const Services = () => {
     return (
       <section className="bg-white">
-        {/* <div className="text-white -mt-28 py-8 px-6 mb-10 text-center bg-gradient-to-r from-blue-700 to-blue-800 rounded-lg shadow-xl max-w-md relative mx-28 ">
-          <h1 className="text-2xl font-bold mb-2">Today's Offer!</h1>
-          <h3 className="text-lg font-semibold mb-2">Sunday Deal: 20% Off</h3>
-          <p className="text-sm mb-4">
-            Safety, Renewable Energy & Solar System
-          </p>
-          <button className="bg-white text-blue-800 font-semibold py-2 px-6 rounded-full shadow-md hover:bg-blue-100 transition duration-300">
-            Book Now
-          </button>
-        </div> */}
+       
 
         <div
           id="services"
@@ -84,7 +75,7 @@ const Services = () => {
             {/* End heading */}
             {/* row */}
             <div className="flex flex-wrap flex-row -mx-4 text-center">
-              {/* Service block 1: SEO Services */}
+              
               <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
@@ -116,8 +107,7 @@ const Services = () => {
                   </p>
                 </div>
               </div>
-              {/* End service block 1 */}
-              {/* Service block 2: Social Content */}
+              
               <div
                 className="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp"
                 data-wow-duration="1s"
@@ -406,8 +396,7 @@ const Services = () => {
                 </div>
               </div>
 
-              {/* End service block 2 */}
-              {/* Add more service blocks similarly */}
+              
             </div>
             {/* End row */}
           </div>
