@@ -9,7 +9,7 @@ const [slideInterval, setSlideInterval] = useState(null);
   
   useEffect(() => {
     if (slideInterval) clearInterval(slideInterval);
-    setSlideInterval(setInterval(handleNext, 3000));
+    setSlideInterval(setInterval(handleNext, 2500));
     return () => clearInterval(slideInterval);
   }, [slideInterval]);
 
