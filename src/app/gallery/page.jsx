@@ -1,15 +1,15 @@
 "use client"
 import React, { useRef, useState, useEffect } from "react";
-import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
-const GallerySection = () => {
+const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
 const [slideInterval, setSlideInterval] = useState(null);
   
   useEffect(() => {
     if (slideInterval) clearInterval(slideInterval);
-    setSlideInterval(setInterval(handleNext, 2500));
+    setSlideInterval(setInterval(handleNext, 3000));
     return () => clearInterval(slideInterval);
   }, [slideInterval]);
 
@@ -39,18 +39,17 @@ const [slideInterval, setSlideInterval] = useState(null);
   };
 
   return (
-    <section className="bg-white py-20">
-      <h1 className=" text-4xl text-center py-10 font-bold">Gallery</h1>
+    <section className="bg-white py-10 md:py-20">
+      <h1 className="text-3xl md:text-4xl text-center py-5 md:py-10 font-bold">
+        Gallery
+      </h1>
       <div
         id="default-carousel"
-        className="relative w-[60%] mx-auto h-auto"
+        className="relative md:w-[60%] lg:w-[60%] w-[90%] mx-auto h-auto"
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div
-          className="relative h-auto overflow-hidden rounded-lg md:h-96"
-          ref={carouselRef}
-        >
+        <div className="relative w-full h-80 md:h-96 overflow-hidden rounded-lg">
           {/* Carousel items */}
           {images.map((image, index) => (
             <div
@@ -62,53 +61,49 @@ const [slideInterval, setSlideInterval] = useState(null);
             >
               <img
                 src={image}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                className="block w-full h-full object-cover"
                 alt={`Slide ${index + 1}`}
               />
             </div>
           ))}
         </div>
+        {/* Slider controls */}
+        <div className="absolute z-10 bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 justify-end">
+          <button
+            type="button"
+            className="w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center focus:outline-none"
+            data-carousel-prev
+            onClick={handlePrev}
+          >
+            <FiChevronLeft className="text-gray-600" />
+          </button>
+          <button
+            type="button"
+            className="w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center focus:outline-none"
+            data-carousel-next
+            onClick={handleNext}
+          >
+            <FiChevronRight className="text-gray-600" />
+          </button>
+        </div>
         {/* Slider indicators */}
-        <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <div className="absolute z-10 bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
           {images.map((_, index) => (
             <button
               key={index}
               type="button"
-              className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-blue-900" : ""
+              className={`w-3 h-3 bg-gray-300 rounded-full focus:outline-none ${
+                index === currentIndex ? "bg-blue-600" : ""
               }`}
               aria-current={index === currentIndex ? "true" : "false"}
               aria-label={`Slide ${index + 1}`}
               onClick={() => handleSlideTo(index)}
-              data-carousel-slide-to={index}
             ></button>
           ))}
         </div>
-        {/* Slider controls */}
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-          onClick={handlePrev}
-        >
-          <h1 className=" text-3xl">
-            <FiArrowLeftCircle />
-          </h1>
-          {/* Previous button content */}
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-          onClick={handleNext}
-        >
-          <h1 className=" text-3xl">
-            <FiArrowRightCircle />
-          </h1>
-        </button>
       </div>
     </section>
   );
 };
 
-export default GallerySection;
+export default Gallery;
