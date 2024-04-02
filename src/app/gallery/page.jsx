@@ -4,14 +4,16 @@ import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef(null);
+  // const carouselRef = useRef(null);
 const [slideInterval, setSlideInterval] = useState(null);
   
   useEffect(() => {
-    if (slideInterval) clearInterval(slideInterval);
-    setSlideInterval(setInterval(handleNext, 3000));
-    return () => clearInterval(slideInterval);
-  }, [slideInterval]);
+    const intervalId = setInterval(handleNext, 3000);
+    setSlideInterval(intervalId);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
 
   const images = [
     "/gallery/1.jpg",

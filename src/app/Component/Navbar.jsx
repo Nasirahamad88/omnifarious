@@ -1,13 +1,16 @@
 "use client"
 import Image from 'next/image';
 import React from 'react'
+import { useState } from "react";
+
 import { useMediaQuery } from "react-responsive";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FiChevronDown } from "react-icons/fa";
 import Logo from '../../../public/Logo.png'
 import TopNavbar from './TopNavbar';
 import Link from 'next/link';
 const Navbar = () => {
     const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
@@ -35,7 +38,7 @@ const Navbar = () => {
           <div className="fixed top-0 left-0 z-10 w-full">
             <TopNavbar />
             <div className="flex  h-16    bg-indigo-300 ">
-              <nav className="flex w-[98%] items-center mx-auto justify-between">
+              <nav className="flex items-center mx-auto justify-between">
                 <div className="">
                   <Link href="/">
                     <Image src={Logo} alt="logo" height={180} width={250} />
@@ -58,10 +61,10 @@ const Navbar = () => {
                         <a>Introduction</a>
                       </li>
                       <li>
-                        <a> Mission Vision</a>
+                        <Link href="/mission-Vision">Mission Vision</Link>
                       </li>
                       <li>
-                        <a> Our Team</a>
+                        <Link href="/ourTeam"> Our Team</Link>
                       </li>
                     </ul>
                   </div>
@@ -171,15 +174,21 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div
-                    tabIndex={0}
-                    className="font-bold border rounded-lg px-2 py-1   text-indigo-950 bg-green-800 "
-                  >
-                    <Link href="/contact">Contact Us</Link>
-                  </div>
+                  <li>
+                    <Link href="/contact">
+                      <button
+                        tabIndex={0}
+                        className="font-bold border rounded-lg px-2 py-1   text-indigo-950 bg-green-800 "
+                      >
+                        <div>Contact Us</div>
+                      </button>
+                    </Link>
+                  </li>
                 </div>
               </nav>
             </div>
+            
+
           </div>
         </>
       )}
