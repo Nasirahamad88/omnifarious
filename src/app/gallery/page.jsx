@@ -51,7 +51,7 @@ const [slideInterval, setSlideInterval] = useState(null);
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div className="relative w-full h-80 md:h-96 overflow-hidden rounded-lg">
+        <div className="relative w-full h-80 md:h-auto lg:h-auto overflow-hidden rounded-lg">
           {/* Carousel items */}
           {images.map((image, index) => (
             <div
@@ -70,7 +70,7 @@ const [slideInterval, setSlideInterval] = useState(null);
           ))}
         </div>
         {/* Slider controls */}
-        <div className="absolute z-10 bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 justify-end">
+        <div className="absolute z-10 bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-20 justify-between">
           <button
             type="button"
             className="w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center focus:outline-none"
@@ -95,7 +95,7 @@ const [slideInterval, setSlideInterval] = useState(null);
               key={index}
               type="button"
               className={`w-3 h-3 bg-gray-300 rounded-full focus:outline-none ${
-                index === currentIndex ? "bg-blue-600" : ""
+                index === currentIndex ? "bg-green-700" : ""
               }`}
               aria-current={index === currentIndex ? "true" : "false"}
               aria-label={`Slide ${index + 1}`}

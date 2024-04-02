@@ -1,4 +1,5 @@
 import React from "react";
+import AllLogo from "../Component/AllLogo";
 
 const projects = [
   {
@@ -56,6 +57,7 @@ const CompletedProjects = () => {
             ))}
           </div>
         </div>
+        <AllLogo/>
       </section>
     </div>
   );

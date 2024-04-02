@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
+
 const OngoingProject = () => {
     return (
       <section className="bg-white text-black">
@@ -39,10 +40,11 @@ const OngoingProject = () => {
           </div>
         </div>
         <Link href="/completedProjects">
-          <h2 className="font-bold border rounded-lg py-2 px-2 mt-10 text-center w-[25%] mx-auto  text-indigo-950 bg-green-800 text-2xl ">
+          <h2 className="font-bold border rounded-lg py-2 px-2 mt-10 text-center w-[90%] sm:w-[25%] mx-auto text-indigo-950 bg-green-800 text-2xl">
             Completed Projects
           </h2>
         </Link>
+       
       </section>
     );
 }
