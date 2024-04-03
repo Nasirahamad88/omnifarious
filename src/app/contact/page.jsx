@@ -3,7 +3,7 @@ import GoogleMapsLink from "../Component/GoogleMapsLink";
 
 const Contact = () => {
   return (
-    <section className="bg-white pt-12 sm:pt-20 pb-12 sm:pb-20">
+    <section className="bg-white pt-32 pb-12 sm:pb-20">
       <div className="w-[90%] mx-auto">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
