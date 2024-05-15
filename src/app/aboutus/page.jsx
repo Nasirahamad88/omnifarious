@@ -1,17 +1,11 @@
-import Image from 'next/image';
 import React from 'react'
-import Image1 from '../../../public/banner/hero2.jpg'
+import Marquee from 'react-fast-marquee';
+import AboutUsSide from '../Component/AboutUs-side';
 const AboutUs = () => {
+  
     return (
-      <section className="bg-white flex py-20 justify-center items-center">
-        <div className="">
-          <Image
-            src={Image1}
-            alt="about"
-            className="w-[50%] mx-auto pt-20 rounded-full border-8 border-blue-400"
-          />
-        </div>
-        <div className=" space-y-8 ">
+      <section className="bg-white flex py-20 justify-center items-center ">
+        <div className=" space-y-8 lg:w-2/3 md:w-2/3 w-2/3 px-5">
           <h1 className=" font-bold text-4xl underline  text-black">
             About Us
           </h1>
@@ -35,6 +29,11 @@ const AboutUs = () => {
             manage risk and resilience, whilst supporting your ability to
             operate effectively and act responsibly
           </p>
+        </div>
+        <div className=" item-start">
+          <div className="  h-[20%] w-[20%] ">
+            <AboutUsSide/>
+          </div>
         </div>
       </section>
     );
