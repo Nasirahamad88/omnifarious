@@ -41,7 +41,7 @@ const [slideInterval, setSlideInterval] = useState(null);
   };
 
   return (
-    <section className="bg-white py-10 md:py-20">
+    <section className="bg-white py-10 md:py-20 ">
       <h1 className="text-3xl md:text-4xl text-center py-5 md:py-10 font-bold">
         Gallery
       </h1>
@@ -51,7 +51,7 @@ const [slideInterval, setSlideInterval] = useState(null);
         data-carousel="slide"
       >
         {/* Carousel wrapper */}
-        <div className="relative w-full h-80 md:h-auto lg:h-auto overflow-hidden rounded-lg">
+        <div className="relative w-full h-80 md:auto lg:h-auto overflow-hidden rounded-lg">
           {/* Carousel items */}
           {images.map((image, index) => (
             <div

@@ -1,13 +1,13 @@
 "use client";
-import Hero4 from "../../../public/slide/1.png";
+// import Hero4 from "../../../public/slide/1.png";
 import Hero3 from "../../../public/slide/2.png";
 import Hero1 from "../../../public/slide/3.png";
-import Hero2 from "../../../public/slide/4.png";
+// import Hero2 from "../../../public/slide/4.png";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Carousel = () => {
-  const images = [Hero1, Hero2, Hero3, Hero4];
+  const images = [Hero1, Hero3,];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideInterval, setSlideInterval] = useState(null);
 

@@ -13,28 +13,37 @@ const OngoingProject = () => {
             <div className="collapse collapse-arrow join-item border border-base-300">
               <input type="radio" name="my-accordion-4" defaultChecked />
               <div className="collapse-title text-xl  ">
-                Click to open this one and close others
+                SPARKLE KNIT COMPOSITE LTD.
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>
+                  Project Entity: Fire Alarm & Detection System Fire Safety
+                  Design
+                </p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
               <input type="radio" name="my-accordion-4" />
               <div className="collapse-title text-xl font-medium">
-                Click to open this one and close others
+                FAHION POINT LTD.
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>
+                  Project Entity: Detail Engineering Assessment Fire Safety
+                  Consultant
+                </p>
               </div>
             </div>
             <div className="collapse collapse-arrow join-item border border-base-300">
               <input type="radio" name="my-accordion-4" />
               <div className="collapse-title text-xl font-medium">
-                Click to open this one and close others
+                MEGHNA SUGAR REFINARY LTD.
               </div>
               <div className="collapse-content">
-                <p>hello</p>
+                <p>
+                  Project Entity: Fire Alarm & Detection System Fire Standpipe
+                  System
+                </p>
               </div>
             </div>
           </div>
@@ -44,7 +53,6 @@ const OngoingProject = () => {
             Completed Projects
           </h2>
         </Link>
-       
       </section>
     );
 }

@@ -25,12 +25,12 @@ const WhyUs = () => {
             />
           </div>
           <div className="md:w-1/2 md:pl-4">
-            <div className="text-white">
-              <h1 className="mb-3 text-3xl font-bold">Hello there</h1>
+            <div className="text-white pt-12">
+              <h1 className="mb-3 text-3xl font-bold">Why Choose Us</h1>
               <p className="mb-3 text-sm md:text-base">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Expert safety consultancy with comprehensive solutions,
+                experienced professionals, and a client-focused approach.
+                Trusted by leading companies for cutting-edge safety standards.
               </p>
               <button className="btn btn-primary">Get Started</button>
             </div>
