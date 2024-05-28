@@ -11,7 +11,7 @@ const Contact = () => {
               Contact Us
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              We'd love to hear from you. Contact us using the details below.
+              We'd love to hear from you. Contact us using the details below:
             </p>
           </div>
         </div>

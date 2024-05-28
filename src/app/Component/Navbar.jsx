@@ -43,7 +43,7 @@ const Navbar = () => {
               <nav className="flex items-center mx-auto justify-between">
                 <div className="">
                   <Link href="/">
-                    <Image src={Logo} alt="logo" height={180} width={250} />
+                    <Image src={Logo} alt="logo" height={180} width={180} />
                   </Link>
                 </div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
                   <div className="dropdown dropdown-hover">
                     <h1
                       tabIndex={0}
-                      className=" rounded-lg my-1 px-1 text-indigo-950 font-semibold"
+                      className=" rounded-lg my-1 px-1 text-indigo-950 font-medium"
                     >
                       Welcome to Omnifarious
                     </h1>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   <div className="dropdown dropdown-hover ">
                     <div
                       tabIndex={0}
-                      className=" text-indigo-950 font-semibold px-1 my-1"
+                      className=" text-indigo-950 font-medium px-1 my-1"
                     >
                       <Link href="/services">Services</Link>
                     </div>
@@ -116,7 +116,7 @@ const Navbar = () => {
                   <div className="dropdown dropdown-hover ">
                     <div
                       tabIndex={0}
-                      className=" text-indigo-950 font-semibold my-1 px-1 "
+                      className=" text-indigo-950 font-medium my-1 px-1 "
                     >
                       Training & Facilitation (T&F)
                     </div>
@@ -137,7 +137,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="text-indigo-950 font-semibold px-1 my-1">
+                  <div className="text-indigo-950 font-medium px-1 my-1">
                     <Link href="/gallery">
                       <div className="hover:text-blue-500 focus:outline-none focus:text-blue-500">
                         Gallery
@@ -146,14 +146,14 @@ const Navbar = () => {
                   </div>
                   <div
                     tabIndex={0}
-                    className=" text-indigo-950 font-semibold px-1 my-1"
+                    className=" text-indigo-950 font-medium px-1 my-1"
                   >
                     Latest News
                   </div>
                   <div className="dropdown dropdown-hover">
                     <div
                       tabIndex={0}
-                      className=" text-indigo-950 font-semibold px-1  my-1"
+                      className=" text-indigo-950font-medium px-1  my-1"
                     >
                       Request Quotation
                     </div>

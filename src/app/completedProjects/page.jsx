@@ -57,7 +57,7 @@ const CompletedProjects = () => {
             ))}
           </div>
         </div>
-        <AllLogo/>
+        {/* <AllLogo/> */}
       </section>
     </div>
   );

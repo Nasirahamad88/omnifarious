@@ -35,22 +35,22 @@ const AllLogo = () => {
           Our Customers
         </h2>
         <Marquee {...settings} className="flex ">
-          <Image src={Logo1} className="w-32 rounded-full px-2" />
-          <Image src={Logo2} className="w-32 rounded-full px-2" />
-          <Image src={Logo3} className="w-32 rounded-full px-2" />
-          <Image src={Logo4} className="w-32 rounded-full px-2" />
+          <Image src={Logo1} className="w-32  px-2 " />
+          <Image src={Logo2} className="w-32  px-2" />
+          <Image src={Logo3} className="w-32  px-2" />
+          <Image src={Logo4} className="w-32  px-2" />
           {/* <Image src={Logo5} className="w-32 rounded-full px-2" /> */}
-          <Image src={Logo6} className="w-32 rounded-full px-2" />
-          <Image src={Logo7} className="w-32 rounded-full px-2" />
-          <Image src={Logo8} className="w-32 rounded-full px-2" />
-          <Image src={Logo9} className="w-32 rounded-full px-2" />
-          <Image src={Logo10} className="w-32 rounded-full px-2" />
-          <Image src={Logo11} className="w-32 rounded-full px-2" />
-          <Image src={Logo12} className="w-32 rounded-full px-2" />
-          <Image src={Logo13} className="w-32 rounded-full px-2" />
-          <Image src={Logo14} className="w-32 rounded-full px-2" />
-          <Image src={Logo15} className="w-32 rounded-full px-2" />
-          <Image src={Logo16} className="w-32 rounded-full px-2" />
+          <Image src={Logo6} className="w-32  px-2" />
+          <Image src={Logo7} className="w-32  px-2" />
+          <Image src={Logo8} className="w-32  px-2" />
+          <Image src={Logo9} className="w-32  px-2" />
+          <Image src={Logo10} className="w-32  px-2" />
+          <Image src={Logo11} className="w-32  px-2" />
+          <Image src={Logo12} className="w-32  px-2" />
+          <Image src={Logo13} className="w-32  px-2" />
+          <Image src={Logo14} className="w-32  px-2" />
+          <Image src={Logo15} className="w-32  px-2" />
+          <Image src={Logo16} className="w-32  px-2" />
         </Marquee>
       </div>
     </section>

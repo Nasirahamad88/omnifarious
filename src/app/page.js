@@ -2,6 +2,7 @@ import AllLogo from "./Component/AllLogo";
 import Carousel from "./Component/Carousel";
 import Testimonials from "./Component/Testimonials";
 import AboutUs from "./aboutus/page";
+import CompletedProjects from "./completedProjects/page";
 import Contact from "./contact/page";
 import Gallery from "./gallery/page";
 import OngoingProject from "./ongoingProjects/page";
@@ -18,7 +19,8 @@ export default function Home() {
       <WhyUs />
       <OurTeam />
       <Gallery />
-      <OngoingProject/>
+      {/* <OngoingProject/> */}
+      <CompletedProjects/>
       <Testimonials />
       <AllLogo />
       <Contact/>

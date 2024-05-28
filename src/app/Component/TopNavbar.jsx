@@ -37,9 +37,9 @@ const TopNavbar = () => {
             <LuPhone />
             <p className="text-green-800">+880 1621 910 870</p>
           </a>
-          <p className="text-green-800 ps-3">
+          {/* <p className="text-green-800 ps-3">
             House 39, Road 13, Sector 13, Uttara Model Town, Dhaka-1230
-          </p>
+          </p> */}
         </div>
       </nav>
     </section>

@@ -19,7 +19,7 @@ const Testimonials = () => {
   return (
     <section>
       <div className="bg-white py-10">
-        <h1 className=" text-4xl font-bold text-center py-10">
+        <h1 className=" text-4xl font-bold text-center py-10 text-black">
           Words From Our Partners And Clients
         </h1>
         {/* <button onClick={handleAutoplayToggle}>
@@ -36,7 +36,7 @@ const Testimonials = () => {
                 our electrical and fire safety measures were top-notch. Their
                 professionalism and thorough approach have greatly improved our
                 safety standards."
-                <br />- Nasima Akter, Chief Safety Officer
+                <br />-  Chief Safety Officer
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Testimonials = () => {
                 consultancy has been invaluable. We are highly satisfied with
                 the improvements and the peace of mind it brings to our
                 operations."
-                <br />- Farzana Ahmed, Operations Director
+                <br />- Operations Director
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Testimonials = () => {
                 facility is now equipped with a robust fire safety and lightning
                 protection system. The team's dedication and expertise have been
                 outstanding."
-                <br />- Jamal Uddin, Plant Manager
+                <br />- Plant Manager
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const Testimonials = () => {
                 "Their work on our fire alarm and detection systems was
                 exemplary. The efficiency and reliability of the system have
                 significantly boosted our safety protocols."
-                <br />- Ahmed Rahman, Safety Manager
+                <br />- Safety Manager
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ const Testimonials = () => {
                 "Their fire alarm and safety design services were top-notch.
                 We've noticed a considerable improvement in our safety measures,
                 thanks to their thorough and professional approach."
-                <br />- Farzana Ahmed, Operations Director
+                <br />-Operations Director
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ const Testimonials = () => {
                 "The installation of our fire alarm system and the development
                 of a single line diagram were handled expertly. Their attention
                 to detail and commitment to safety are truly commendable."
-                <br />- Jamal Uddin, Plant Manager
+                <br />- Plant Manager
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Testimonials = () => {
                 "Their consultancy services have been instrumental in enhancing
                 our electrical and fire safety measures. The improvements are
                 evident, and we feel much more secure."
-                <br />- Nasima Akter, Chief Safety Officer
+                <br />- Chief Safety Officer
               </p>
             </div>
           </div>
@@ -130,7 +130,7 @@ const Testimonials = () => {
                 has greatly benefited our operations. Their dedication and
                 professional approach have significantly improved our safety
                 culture."
-                <br />- Kaled Mahamud, Chief Safety Officer
+                <br />- Chief Safety Officer
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ const Testimonials = () => {
                 "With the assistance of their consultants, we have successfully
                 elevated our safety measures to meet international standards.
                 Their thoroughness and attention to detail are commendable."
-                <br />- Amin Ali, Chief Safety Officer
+                <br />- Chief Safety Officer
               </p>
             </div>
           </div>
@@ -156,7 +156,7 @@ const Testimonials = () => {
                 "The professional consultancy provided for our electrical and
                 fire safety needs has made a significant impact on our
                 operations. We now have a much safer working environment."
-                <br />- Pnkoj Kumar, Chief Safety Officer
+                <br />- Chief Safety Officer
               </p>
             </div>
           </div>
