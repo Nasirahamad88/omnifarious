@@ -10,7 +10,7 @@ import { LuPhone } from "react-icons/lu";
 const TopNavbar = () => {
   return (
     <section className="bg-indigo-950 w-full h-10 z-10">
-      <nav className="md:w-[80%] lg-w-[80%] sm:w-full mx-auto flex md:justify-between lg-justify-between items-center py-1 sm:justify-center">
+      <nav className="md:w-[80%]  lg-w-[80%] sm:w-full mx-auto flex md:justify-between lg-justify-between items-center py-1 justify-between">
         <div className="flex px-2 space-x-5 sm:space-x-2">
           <Link href="www.facebook.com/omnifariousinc " passHref>
             <div target="_blank" rel="noopener noreferrer">

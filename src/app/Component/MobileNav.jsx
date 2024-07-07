@@ -19,10 +19,10 @@ const Navbar = () => {
   };
 
   return (
-    <section className="top-0 left-0 z-10 w-full fixed">
-      <Marquee>
+    <section className="top-0 left-0 z-10 w-full ">
+      <>
         <TopNavbar />
-      </Marquee>
+      </>
       <div className=" w-full">
         <div className="bg-indigo-300 flex justify-between items-center h-16">
           <div className="pl-4">

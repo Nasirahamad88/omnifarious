@@ -36,7 +36,7 @@ const Carousel = () => {
   };
 
   return (
-    <section className="pt-24 bg-white">
+    <section className=" bg-white">
       <div className="carousel w-full relative">
         {images.map((image, index) => (
           <div
