@@ -5,7 +5,6 @@ import AboutUs from "./aboutus/page";
 import CompletedProjects from "./completedProjects/page";
 import Contact from "./contact/page";
 import Gallery from "./gallery/page";
-import OngoingProject from "./ongoingProjects/page";
 import OurTeam from "./ourTeam/page";
 import Services from "./services/page";
 import WhyUs from "./whyUs/page";
@@ -19,7 +18,7 @@ export default function Home() {
       <WhyUs />
       <OurTeam />
       <Gallery />
-      {/* <OngoingProject/> */}
+     
       <CompletedProjects/>
       <Testimonials />
       <AllLogo />
