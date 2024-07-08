@@ -4,45 +4,103 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-5 md:p-10 bg-base-200 text-base-content">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <nav className=" space-x-2">
-            <h6 className="footer-title">Services</h6>
-            <a className="link link-hover">Fire Safety</a>
-            <a className="link link-hover">Social Compliance</a>
-            <a className="link link-hover">Electrical Safety</a>
-            <a className="link link-hover">Training Organizer </a>
+      <footer className="footer p-5 md:p-10 bg-gray-100 text-gray-800">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <nav>
+            <h6 className="text-lg font-bold mb-4">Services</h6>
+            <ul>
+              <li>
+                <a className="link link-hover hover:text-blue-600 transition duration-200">
+                  Fire Safety
+                </a>
+              </li>
+              <li>
+                <a className="link link-hover hover:text-blue-600 transition duration-200">
+                  Social Compliance
+                </a>
+              </li>
+              <li>
+                <a className="link link-hover hover:text-blue-600 transition duration-200">
+                  Electrical Safety
+                </a>
+              </li>
+              <li>
+                <a className="link link-hover hover:text-blue-600 transition duration-200">
+                  Training Organizer
+                </a>
+              </li>
+            </ul>
           </nav>
-          <nav className=" space-x-2">
-            <Link href="/" className="footer-title">
-              Company
-            </Link>
-            <Link href="/aboutUs" className="link link-hover">
-              About us
-            </Link>
-            <Link href="/contact" className="link link-hover">
-              Contact
-            </Link>
-            <a className="link link-hover">Jobs</a>
-            {/* <a className="link link-hover">Press kit</a> */}
+          <nav>
+            <h6 className="text-lg font-bold mb-4">Company</h6>
+            <ul>
+              <li>
+                <Link
+                  href="/"
+                  className="link link-hover hover:text-blue-600 transition duration-200"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/aboutUs"
+                  className="link link-hover hover:text-blue-600 transition duration-200"
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="link link-hover hover:text-blue-600 transition duration-200"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <a className="link link-hover hover:text-blue-600 transition duration-200">
+                  Jobs
+                </a>
+              </li>
+            </ul>
           </nav>
-          <nav>{/* <GoogleMapsLink/> */}</nav>
+          <nav>
+            <h6 className="text-lg font-bold mb-4">Find Us</h6>
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  className="link link-hover hover:text-blue-600 transition duration-200"
+                >
+                  Google Maps Link
+                </a>
+              </li>
+              {/* Uncomment and replace the link with the actual Google Maps link */}
+              {/* <li><a href="your-google-maps-link" className="link link-hover hover:text-blue-600 transition duration-200">Google Maps</a></li> */}
+            </ul>
+          </nav>
           <form>
-            <h6 className="footer-title">Newsletter</h6>
+            <h6 className="text-lg font-bold mb-4">Newsletter</h6>
             <fieldset className="form-control">
               <label className="label">
                 <span className="label-text">Enter your email address</span>
               </label>
-              <div className="join sm:flex flex-col md:flex-row items-center">
+              <div className="flex items-center space-x-2">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="username@site.com"
-                  className="input input-bordered join-item mr-2 mb-2 md:mb-0 md:mr-2"
+                  className="input input-bordered w-full max-w-xs"
                 />
-                <button className="btn btn-primary join-item">Subscribe</button>
+                <button className="btn btn-primary">Subscribe</button>
               </div>
             </fieldset>
           </form>
+        </div>
+        <div className="border-t mt-10 pt-6 text-center">
+          <p className="text-sm text-gray-500">
+            &copy; 2024 Omnifarious Inc. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
