@@ -9,6 +9,7 @@ export async function GET() {
     const testimonials = await Testimonial.find({});
     return NextResponse.json(testimonials);
   } catch (error) {
+    console.error("Error fetching testimonials:", error);
     return NextResponse.json(
       { error: "Failed to fetch testimonials" },
       { status: 500 }
@@ -21,11 +22,11 @@ export async function POST(req) {
 
   try {
     const body = await req.json();
-    const { name, message,post } = body;
+    const { name, message, post } = body;
 
     if (!name || !message || !post) {
       return NextResponse.json(
-        { error: "Name and message are required" },
+        { error: "Name, message, and post are required" },
         { status: 400 }
       );
     }
