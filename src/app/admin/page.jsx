@@ -4,7 +4,7 @@ import AddTestimonial from './add-testimonial/page';
 
 const AdminPage = () => {
   return (
-    <section>
+    <section className='bg-white'>
       <div className="pt-32 flex justify-center bg-white p-4 shadow-lg rounded-lg space-x-6">
         <Link href="/" className="text-blue-600 hover:text-blue-800">
           Home
