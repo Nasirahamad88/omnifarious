@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { BASE_API_URL } from "../../../../utils/constants";
 
 export default function AddTestimonial() {
   const [name, setName] = useState("");
@@ -9,15 +9,16 @@ export default function AddTestimonial() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
-  const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
     setSuccess(null);
+    setLoading(true);
 
     try {
-      const res = await fetch("api/testimonial", {
+      const res = await fetch(`${BASE_API_URL}/api/testimonial`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -26,21 +27,24 @@ export default function AddTestimonial() {
       });
 
       if (!res.ok) {
-        throw new Error(await res.text());
+        const errorText = await res.text();
+        throw new Error(errorText);
       }
 
       const data = await res.json();
       setSuccess("Testimonial added successfully!");
       setName("");
-        setMessage("")
-        setPost("");
+      setMessage("");
+      setPost("");
     } catch (error) {
-      setError("Failed to add testimonial. Please try again.");
+      setError(`Failed to add testimonial: ${error.message}`);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="max-w-md  mx-auto mt-32 my-32 p-4 bg-white shadow-md rounded-lg">
+    <div className="max-w-md mx-auto mt-32 my-32 p-4 bg-white shadow-md rounded-lg">
       <h1 className="text-2xl font-bold mb-4">Add Testimonial</h1>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {success && <p className="text-green-500 mb-4">{success}</p>}
@@ -77,8 +81,9 @@ export default function AddTestimonial() {
         <button
           type="submit"
           className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+          disabled={loading}
         >
-          Submit
+          {loading ? "Submitting..." : "Submit"}
         </button>
       </form>
     </div>

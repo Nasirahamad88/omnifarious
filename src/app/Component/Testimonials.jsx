@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
-
+import { BASE_API_URL } from "../../../utils/constants";
 const Testimonials = () => {
 
   
@@ -11,8 +11,9 @@ const Testimonials = () => {
 
  useEffect(() => {
    const fetchTestimonials = async () => {
+    
      try {
-       const res = await fetch("http://localhost:3000/api/testimonial");
+       const res = await fetch(`${BASE_API_URL}/api/testimonial`);
        if (!res.ok) {
          throw new Error("Failed to fetch testimonials");
        }

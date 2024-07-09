@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
-import AddTestimonial from '../add-testimonial/page';
+import AddTestimonial from './add-testimonial/page';
 
 const AdminPage = () => {
   return (
-    <section className='bg-white'>
+    <div className='bg-white'>
       <div className="pt-32 flex justify-center bg-white p-4 shadow-lg rounded-lg space-x-6">
         <Link href="/" className="text-blue-600 hover:text-blue-800">
           Home
@@ -31,7 +31,7 @@ const AdminPage = () => {
       <div>
         <AddTestimonial/>
       </div>
-    </section>
+    </div>
   );
 }
 
