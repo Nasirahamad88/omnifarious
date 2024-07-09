@@ -13,7 +13,7 @@ const Testimonials = () => {
    const fetchTestimonials = async () => {
     
      try {
-       const res = await fetch(`${BASE_API_URL}/api/testimonial`);
+       const res = await fetch("/api/testimonial");
        if (!res.ok) {
          throw new Error("Failed to fetch testimonials");
        }

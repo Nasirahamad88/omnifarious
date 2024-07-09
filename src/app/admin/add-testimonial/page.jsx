@@ -18,7 +18,7 @@ export default function AddTestimonial() {
     setLoading(true);
 
     try {
-      const res = await fetch(`${BASE_API_URL}/api/testimonial/route`, {
+      const res = await fetch(`${BASE_API_URL}/api/testimonial`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
