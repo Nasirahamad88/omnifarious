@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import AddTestimonial from './add-testimonial/page';
+import AddTestimonial from '../add-testimonial/page';
 
 const AdminPage = () => {
   return (
