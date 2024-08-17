@@ -40,14 +40,14 @@ const Navbar = () => {
               className="flex  h-16 text-indigo-950 "
               style={{ backgroundColor: "rgba(0, 128, 1, 0.25)" }}
             >
-              <nav className="flex items-center mx-auto justify-between">
-                <div className="">
+              <nav className="flex items-center justify-between mx-auto md:space-x-10 lg:space-x-40 sm:space-x-8">
+                <div className=" ">
                   <Link href="/">
                     <Image src={Logo} alt="logo" height={180} width={180} />
                   </Link>
                 </div>
 
-                <div className="flex text-center space-x-1 justify-items-end ">
+                <div className="flex text-center space-x-3 justify-items-end ">
                   <div className="dropdown dropdown-hover">
                     <h1
                       tabIndex={0}
@@ -68,6 +68,9 @@ const Navbar = () => {
                       <li>
                         <Link href="/ourTeam"> Our Team</Link>
                       </li>
+                      <li>
+                        <Link href="/aboutus">About Us</Link>
+                      </li>
                     </ul>
                   </div>
                   <div className="dropdown dropdown-hover ">
@@ -81,6 +84,18 @@ const Navbar = () => {
                       tabIndex={0}
                       className="dropdown-content z-[1] menu p-2 shadow bg-gray-100 text-black font-bold rounded-box w-64"
                     >
+                      <li>
+                        <a>Head Hunting & Talent Acquisition</a>
+                      </li>
+                      <li>
+                        <a>Digital Signage & Evacuation Plan</a>
+                      </li>
+                      <li>
+                        <a>Social Compliance</a>
+                      </li>
+                      <li>
+                        <a>Training & Facilitation</a>
+                      </li>
                       <li>
                         <a>Consultancy Services</a>
                       </li>
@@ -109,11 +124,11 @@ const Navbar = () => {
                         <a> Electrical Engineering & Consultancy Services </a>
                       </li>
                       <li>
-                        <a> Organizational Development (OD) </a>
+                        <a>Organizational Capacity Assessment & Development </a>
                       </li>
                     </ul>
                   </div>
-                  <div className="dropdown dropdown-hover ">
+                  {/* <div className="dropdown dropdown-hover ">
                     <div
                       tabIndex={0}
                       className=" text-indigo-950 font-medium my-1 px-1 "
@@ -136,7 +151,7 @@ const Navbar = () => {
                         <a> Own Facility </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                   <div className="text-indigo-950 font-medium px-1 my-1">
                     <Link href="/gallery">
                       <div className="hover:text-blue-500 focus:outline-none focus:text-blue-500">

@@ -69,6 +69,9 @@ const Navbar = () => {
                   <li>
                     <Link href="/ourTeam"> Our Team</Link>
                   </li>
+                  <li>
+                    <Link href="/aboutus">About Us</Link>
+                  </li>
                 </ul>
               </div>
               <div className="dropdown dropdown-hover ">
@@ -82,6 +85,18 @@ const Navbar = () => {
                   tabIndex={0}
                   className="dropdown-content z-[1] menu p-2 shadow bg-gray-100 text-black font-bold rounded-box w-64"
                 >
+                  <li>
+                    <a>Head Hunting & Talent Acquisition</a>
+                  </li>
+                  <li>
+                    <a>Digital Signage & Evacuation Plan</a>
+                  </li>
+                  <li>
+                    <a>Social Compliance</a>
+                  </li>
+                  <li>
+                    <a>Training & Facilitation</a>
+                  </li>
                   <li>
                     <a>Consultancy Services</a>
                   </li>
@@ -110,11 +125,11 @@ const Navbar = () => {
                     <a> Electrical Engineering & Consultancy Services </a>
                   </li>
                   <li>
-                    <a> Organizational Development (OD) </a>
+                    <a> Organizational Capacity Assessment & Development </a>
                   </li>
                 </ul>
               </div>
-              <div className="dropdown dropdown-hover ">
+              {/* <div className="dropdown dropdown-hover ">
                 <div
                   tabIndex={0}
                   className=" text-indigo-950 font-semibold my-1 px-1 "
@@ -135,7 +150,7 @@ const Navbar = () => {
                     <a> Own Facility </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div className="text-indigo-950 font-semibold px-1 my-1">
                 <Link href="/gallery">
                   <div className="hover:text-blue-500 focus:outline-none focus:text-blue-500">

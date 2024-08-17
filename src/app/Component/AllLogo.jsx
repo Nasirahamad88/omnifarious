@@ -29,28 +29,105 @@ const AllLogo = () => {
       // style: { height: "200px" },
     };
   return (
-    <section className='bg-white py-20'>
+    <section className="bg-white py-20">
       <div className="space-x-6  w-[80%] mx-auto">
         <h2 className="pb-10 text-4xl font-bold text-black hover:underline text-center">
           Our Customers
         </h2>
-        <Marquee {...settings} className="flex ">
-          <Image src={Logo1} className="w-32  px-2 " />
-          <Image src={Logo2} className="w-32  px-2" />
-          <Image src={Logo3} className="w-32  px-2" />
-          <Image src={Logo4} className="w-32  px-2" />
-          {/* <Image src={Logo5} className="w-32 rounded-full px-2" /> */}
-          <Image src={Logo6} className="w-32  px-2" />
-          <Image src={Logo7} className="w-32  px-2" />
-          <Image src={Logo8} className="w-32  px-2" />
-          <Image src={Logo9} className="w-32  px-2" />
-          <Image src={Logo10} className="w-32  px-2" />
-          <Image src={Logo11} className="w-32  px-2" />
-          <Image src={Logo12} className="w-32  px-2" />
-          <Image src={Logo13} className="w-32  px-2" />
-          <Image src={Logo14} className="w-32  px-2" />
-          <Image src={Logo15} className="w-32  px-2" />
-          <Image src={Logo16} className="w-32  px-2" />
+        <Marquee
+          {...settings}
+          className="flex space-x-4 py-4 bg-gray-100 rounded-lg shadow-lg"
+        >
+          <div className="h-32 w-32 mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo1}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo2}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo3}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo4}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo6}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo7}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo8}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo9}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo10}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo11}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo12}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo13}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo14}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo15}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
+          <div className="h-32 w-32  mx-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center">
+            <Image
+              src={Logo16}
+              className="h-full w-full object-contain rounded-lg"
+            />
+          </div>
         </Marquee>
       </div>
     </section>

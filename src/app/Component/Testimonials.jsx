@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
-import { BASE_API_URL } from "../../../utils/constants";
+
 const Testimonials = () => {
 
   
@@ -47,7 +47,7 @@ const Testimonials = () => {
     <section>
       <div className="bg-white py-10">
         <h1 className="text-4xl font-bold text-center py-10 text-black">
-          Words From Our Partners And Clients
+          Words from our Customer
         </h1>
         <Marquee {...settings} className="flex space-x-6">
           <div className="flex flex-wrap justify-center gap-6">
