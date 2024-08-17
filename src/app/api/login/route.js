@@ -1,6 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import dbConnect from "../../../../libs/mongodb"
-import User from "@/models/User";
+import User from "../../../../models/User"
 import bcrypt from "bcryptjs"; // Make sure to install bcryptjs
 import jwt from "jsonwebtoken";
 
