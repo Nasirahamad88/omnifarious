@@ -92,7 +92,7 @@ const Footer = () => {
                   placeholder="username@site.com"
                   className="input input-bordered w-full max-w-xs"
                 />
-                <button className="btn btn-primary">Subscribe</button>
+                <button className="btn btn-primary bg-green-600">Subscribe</button>
               </div>
             </fieldset>
           </form>

@@ -42,3 +42,37 @@ export async function POST(req) {
     );
   }
 }
+
+export async function DELETE(req) {
+  await dbConnect();
+
+  try {
+    const { id } = await req.json();
+
+    if (!id) {
+      return NextResponse.json({ error: "ID is required" }, { status: 400 });
+    }
+
+    const testimonial = await Testimonial.findById(id);
+
+    if (!testimonial) {
+      return NextResponse.json(
+        { error: "Testimonial not found" },
+        { status: 404 }
+      );
+    }
+
+    await testimonial.deleteOne();
+
+    return NextResponse.json(
+      { success: true, message: "Testimonial deleted successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Error deleting testimonial:", error);
+    return NextResponse.json(
+      { error: "Failed to delete testimonial", details: error.message },
+      { status: 500 }
+    );
+  }
+}

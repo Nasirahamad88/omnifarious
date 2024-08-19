@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { signIn } from "next-auth/react";
+
 import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
@@ -12,20 +12,35 @@ export default function LoginForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await signIn("credentials", {
-      email: formData.email,
-      password: formData.password,
-      redirect: false,
-    });
 
-    if (res.error) {
-      setError(res.error);
-    } else {
-      router.push("/dashboard");
+    try {
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        // Store token and expiration time in localStorage
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("expiresAt", Date.now() + 20 * 60 * 1000); // 10 minutes in milliseconds
+
+        // Redirect to dashboard
+        router.push("/dashboard");
+      } else {
+        setError(data.error);
+      }
+    } catch (err) {
+      setError("Login failed.");
     }
   };
+
   return (
-    <div className="grid bg-white place-items-center h-screen">
+    <div className="grid pt-20 bg-white place-items-center h-screen">
       <div className="flex items-center justify-center h-screen">
         <form
           onSubmit={handleSubmit}
@@ -41,7 +56,7 @@ export default function LoginForm() {
               type="email"
               id="email"
               name="email"
-              className="w-full p-2 border rounded"
+              className="w-full  bg-slate-400 p-2 text-black border rounded"
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -50,14 +65,14 @@ export default function LoginForm() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-gray-700">
+            <label htmlFor="password" className="block text-black">
               Password
             </label>
             <input
               type="password"
               id="password"
               name="password"
-              className="w-full p-2 border rounded"
+              className="w-full p-2 bg-slate-400 text-black border rounded"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })
@@ -67,7 +82,7 @@ export default function LoginForm() {
           </div>
           <button
             type="submit"
-            className="w-full p-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+            className="w-full p-2 text-white bg-green-600 rounded hover:bg-green-900"
           >
             Login
           </button>

@@ -1,27 +1,45 @@
 "use client";
 
-import { signOut } from "next-auth/react";
-import { useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function UserInfo() {
-  const { data: session } = useSession();
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      router.push("/login");
+      return;
+    }
+
+    // Fetch user data from API (if needed)
+    // For demonstration purposes
+    setUser({ name: "User", email: "user@example.com" }); // Replace with actual user fetching logic
+
+    setLoading(false);
+  }, [router]);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
-    <div className="grid pt-28 bg-white place-items-center">
-      <div className="shadow-lg p-8 bg-zince-300/10 flex flex-col gap-2 my-6">
-        <div>
-          Name: <span className="font-bold">{session?.user?.name}</span>
-        </div>
-        <div>
-          Email: <span className="font-bold">{session?.user?.email}</span>
-        </div>
-        <button
-          onClick={() => signOut()}
-          className="bg-red-500 text-white font-bold px-6 py-2 mt-3"
-        >
-          Log Out
-        </button>
-      </div>
+    <div className="p-6">
+      <h1>Welcome, {user.name}</h1>
+      <p>This is your dashboard.</p>
+      <button
+        onClick={() => {
+          localStorage.removeItem("token");
+          router.push("/login");
+        }}
+        className="p-2 text-white bg-red-500 rounded hover:bg-red-600"
+      >
+        Logout
+      </button>
     </div>
   );
 }

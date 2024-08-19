@@ -34,7 +34,14 @@ export async function POST(req) {
 }
 
 export async function GET() {
-  return new Response(JSON.stringify({ message: "GET method not supported" }), {
-    status: 405,
-  });
+  await dbConnect();
+
+  try {
+    const users = await User.find({}, { password: 0 }); // Exclude passwords from the response
+    return new Response(JSON.stringify(users), { status: 200 });
+  } catch (error) {
+    return new Response(JSON.stringify({ error: "Failed to fetch users." }), {
+      status: 500,
+    });
+  }
 }

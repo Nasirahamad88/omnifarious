@@ -1,15 +1,18 @@
 import mongoose from "mongoose";
 
-const GallerySchema = new mongoose.Schema({
-  image: {
+const GalleryItemSchema = new mongoose.Schema({
+  title: {
     type: String,
     required: true,
   },
-  createdAt: {
-    type: Date,
-    default: Date.now,
+  imageUrl: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
   },
 });
 
-export default mongoose.models.Gallery ||
-  mongoose.model("Gallery", GallerySchema);
+export default mongoose.models.GalleryItem ||
+  mongoose.model("GalleryItem", GalleryItemSchema);
