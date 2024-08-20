@@ -5,12 +5,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-// Disable body parsing by Next.js
-// export const config = {
-//   api: {
-//     bodyParser: false,
-//   },
-// };
+
 
 export async function POST(req) {
   await dbConnect();
