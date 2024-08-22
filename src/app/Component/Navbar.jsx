@@ -23,10 +23,10 @@ const Navbar = () => {
   };
 
   return (
-    <section>
+    <section className="bg-white">
       <div
         id="mobile-menu-backdrop"
-        className={`fixed top-0 left-0 w-full h-screen bg-black opacity-50 z-[1000] ${
+        className={`fixed top-0 left-0 w-full h-screen bg-white opacity-50 z-[1000] ${
           !mobileMenuOpen && "hidden"
         }`}
         onClick={handleCloseMobileMenu}
@@ -34,11 +34,11 @@ const Navbar = () => {
       {/* Desktop menu items */}
       {!isMobile && (
         <>
-          <div className="fixed top-0 left-0 z-10 w-full">
+          <div className="fixed top-0 left-0 z-10 w-full ">
             <TopNavbar />
             <div
-              className="flex  h-16 text-indigo-950 "
-              style={{ backgroundColor: "rgba(0, 128, 1, 0.25)" }}
+              className="flex  h-16 text-indigo-950 bg-green-200 opacity-90"
+              
             >
               <nav className="flex items-center justify-between mx-auto md:space-x-10 lg:space-x-40 sm:space-x-8">
                 <div className=" ">

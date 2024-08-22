@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Image2 from "../../../public/gallery/whyus.jpg";
+import Image2 from "../../../public/whyus.jpg";
 import Image1 from "../../../public/banner/whyus.png";
 
 const WhyUs = () => {
