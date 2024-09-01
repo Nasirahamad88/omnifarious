@@ -32,7 +32,7 @@ import Logo29 from "../../../public/alllogo/29.jpeg";
 import Logo30 from "../../../public/alllogo/30.jpg";
 import Logo31 from "../../../public/alllogo/31.jpeg";
 import Logo32 from "../../../public/alllogo/32.jpg";
-import Logo33 from "../../../public/alllogo/33.jpg";
+import Logo33 from "../../../public/alllogo/33.JPG";
 import Logo34 from "../../../public/alllogo/34.png";
 import Logo35 from "../../../public/alllogo/35.png";
 import Logo36 from "../../../public/alllogo/36.webp";
