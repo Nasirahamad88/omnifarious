@@ -163,7 +163,7 @@ const Navbar = () => {
                     tabIndex={0}
                     className=" text-indigo-950 font-medium px-1 my-1"
                   >
-                    Latest News
+                    <Link href='/news'>Latest News</Link>
                   </div>
                   <div className="dropdown dropdown-hover">
                     <div

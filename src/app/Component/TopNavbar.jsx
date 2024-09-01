@@ -3,13 +3,15 @@ import React from "react";
 import {
   SlSocialFacebook,
   SlSocialLinkedin,
-  SlSocialTwitter,
+  
 } from "react-icons/sl";
+import { FaWhatsapp } from "react-icons/fa";
+
 import { LuPhone } from "react-icons/lu";
 
 const TopNavbar = () => {
   return (
-    <section className="bg-indigo-900 w-full h-10 z-10">
+    <section className="bg-indigo-50 w-full h-10 z-10 text-black">
       <nav className="md:w-[80%]  lg-w-[80%] sm:w-full mx-auto flex md:justify-between lg-justify-between items-center py-1 justify-between">
         <div className="flex px-2 space-x-5 sm:space-x-2">
           <Link href="www.facebook.com/omnifariousinc " passHref>
@@ -25,9 +27,9 @@ const TopNavbar = () => {
               <SlSocialLinkedin />
             </div>
           </Link>
-          <Link href="https://twitter.com" passHref>
+          <Link href="https://wa.me/8801673901414" passHref>
             <div target="_blank" rel="noopener noreferrer">
-              <SlSocialTwitter />
+              <FaWhatsapp />
             </div>
           </Link>
         </div>
@@ -37,9 +39,6 @@ const TopNavbar = () => {
             <LuPhone />
             <p className="white shadow-lg">+880 1316 137842</p>
           </a>
-          {/* <p className="text-green-800 ps-3">
-            House 39, Road 13, Sector 13, Uttara Model Town, Dhaka-1230
-          </p> */}
         </div>
       </nav>
     </section>

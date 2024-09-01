@@ -65,21 +65,23 @@ const Footer = () => {
               </li>
             </ul>
           </nav>
-          <nav>
+          <div>
             <h6 className="text-lg font-bold mb-4">Find Us</h6>
-            <ul>
-              <li>
-                <a
+           
+              <div>
+                <div
                   href="#"
                   className="link link-hover hover:text-blue-600 transition duration-200"
                 >
-                  Google Maps Link
-                </a>
-              </li>
-              {/* Uncomment and replace the link with the actual Google Maps link */}
-              {/* <li><a href="your-google-maps-link" className="link link-hover hover:text-blue-600 transition duration-200">Google Maps</a></li> */}
-            </ul>
-          </nav>
+                  <Link href="https://maps.app.goo.gl/cbNuhnQVguJhLWhj8">
+                    
+                    Google Maps Link
+                  </Link>
+                </div>
+              </div>
+              
+            
+          </div>
           <form>
             <h6 className="text-lg font-bold mb-4">Newsletter</h6>
             <fieldset className="form-control">
@@ -92,7 +94,9 @@ const Footer = () => {
                   placeholder="username@site.com"
                   className="input input-bordered w-full max-w-xs"
                 />
-                <button className="btn btn-primary bg-green-600">Subscribe</button>
+                <button className="btn btn-primary bg-green-600">
+                  Subscribe
+                </button>
               </div>
             </fieldset>
           </form>
