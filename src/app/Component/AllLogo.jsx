@@ -50,6 +50,43 @@ import Logo47 from "../../../public/alllogo/47.png";
 import Logo48 from "../../../public/alllogo/48.jpeg";
 import Logo49 from "../../../public/alllogo/49.jpeg";
 import Logo50 from "../../../public/alllogo/50.gif";
+import Logo51 from "../../../public/alllogo/51.png";
+import Logo52 from "../../../public/alllogo/52.jpeg";
+import Logo53 from "../../../public/alllogo/53.png";
+import Logo54 from "../../../public/alllogo/54.jpeg";
+import Logo55 from "../../../public/alllogo/55.jpeg";
+import Logo56 from "../../../public/alllogo/56.png";
+import Logo57 from "../../../public/alllogo/57.jpeg";
+import Logo58 from "../../../public/alllogo/58.png";
+import Logo59 from "../../../public/alllogo/59.png";
+import Logo60 from "../../../public/alllogo/60.png";
+import Logo61 from "../../../public/alllogo/61.png";
+import Logo62 from "../../../public/alllogo/62.jpeg";
+import Logo63 from "../../../public/alllogo/63.jpeg";
+import Logo64 from "../../../public/alllogo/64.jpeg";
+import Logo65 from "../../../public/alllogo/65.png";
+import Logo66 from "../../../public/alllogo/66.jpg";
+import Logo67 from "../../../public/alllogo/67.png";
+import Logo68 from "../../../public/alllogo/68.png";
+import Logo69 from "../../../public/alllogo/69.jpeg";
+import Logo70 from "../../../public/alllogo/70.png";
+import Logo71 from "../../../public/alllogo/71.png";
+import Logo72 from "../../../public/alllogo/72.png";
+import Logo73 from "../../../public/alllogo/73.png";
+import Logo74 from "../../../public/alllogo/74.jpeg";
+import Logo75 from "../../../public/alllogo/75.jpeg";
+import Logo76 from "../../../public/alllogo/76.png";
+import Logo77 from "../../../public/alllogo/77.png";
+import Logo78 from "../../../public/alllogo/78.png";
+import Logo79 from "../../../public/alllogo/79.jpeg";
+import Logo80 from "../../../public/alllogo/80.png";
+import Logo81 from "../../../public/alllogo/81.png";
+import Logo82 from "../../../public/alllogo/82.png";
+import Logo83 from "../../../public/alllogo/83.png";
+import Logo84 from "../../../public/alllogo/84.jpg";
+import Logo85 from "../../../public/alllogo/85.jpeg";
+import Logo86 from "../../../public/alllogo/86.png";
+import Logo87 from "../../../public/alllogo/87.jpeg";
 
 
 
@@ -103,6 +140,43 @@ const logos = [
   Logo48,
   Logo49,
   Logo50,
+  Logo51,
+  Logo52,
+  Logo53,
+  Logo54,
+  Logo55,
+  Logo56,
+  Logo57,
+  Logo58,
+  Logo59,
+  Logo60,
+  Logo61,
+  Logo62,
+  Logo63,
+  Logo64,
+  Logo65,
+  Logo66,
+  Logo67,
+  Logo68,
+  Logo69,
+  Logo70,
+  Logo71,
+  Logo72,
+  Logo73,
+  Logo74,
+  Logo75,
+  Logo76,
+  Logo77,
+  Logo78,
+  Logo79,
+  Logo80,
+  Logo81,
+  Logo82,
+  Logo83,
+  Logo84,
+  Logo85,
+  Logo86,
+  Logo87,
 ];
 
 const AllLogo = () => {
