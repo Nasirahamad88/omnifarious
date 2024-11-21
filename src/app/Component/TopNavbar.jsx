@@ -37,7 +37,7 @@ const TopNavbar = () => {
         <div className=" font-bold flex">
           <a className="flex items-center sm:space-x-2">
             <LuPhone />
-            <p className="white shadow-lg">+880 1316 137842</p>
+            <p className="white shadow-lg">+8801673901414</p>
           </a>
         </div>
       </nav>
