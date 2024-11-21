@@ -14,7 +14,7 @@ const TopNavbar = () => {
     <section className="bg-indigo-50 w-full h-10 z-10 text-black">
       <nav className="md:w-[80%]  lg-w-[80%] sm:w-full mx-auto flex md:justify-between lg-justify-between items-center py-1 justify-between">
         <div className="flex px-2 space-x-5 sm:space-x-2">
-          <Link href="www.facebook.com/omnifariousinc " passHref>
+          <Link href="https://www.facebook.com/Omnifarious.inc" passHref>
             <div target="_blank" rel="noopener noreferrer">
               <SlSocialFacebook />
             </div>

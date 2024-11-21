@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Team from "../../../public/Team.jpg";
+import Team from "../../../public/Team.png";
 
 const OurTeam = () => {
   return (
@@ -18,4 +18,5 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default OurTeam
+
